@@ -1,7 +1,7 @@
-## Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country
+## Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country. This project is a monolith with a Ruby on Rails API in the backend and React in the frontend.
 
-## This project is a monolith with a RoRs API in backend and React in frontend.
-## Frontend: https://github.com/GabrielVieiraDw/ProductPrices
+### Front Repository
+* https://github.com/GabrielVieiraDw/ProductPrices
 
 ## Technologies/prerequisites
 
