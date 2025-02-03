@@ -21,27 +21,27 @@ After you get all the [prerequisites](#prerequisites), simply execute the follow
 
 ### Clone the repository:
 
-git clone https://github.com/GabrielVieiraDw/ProductPricesApi.git
+* git clone https://github.com/GabrielVieiraDw/ProductPricesApi.git
 
-cd ProductPricesApi
+* cd ProductPricesApi
 
 ### Install dependencies:
 
-bundle install
+* bundle install
 
 ### Configure the database:
 
-Check datababe.yml.example
+* Check datababe.yml.example
 
-rails db:create db:migrate
+* rails db:create db:migrate
 
 Start the application:
 
-rails s
+* rails s
 
 Start Sidekiq for background jobs:
 
-bundle exec sidekiq
+* bundle exec sidekiq
 
 ### INFO
 
