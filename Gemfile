@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
-gem 'mongoid', '~> 8.0'
+gem 'mongoid', '~> 9.0'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
