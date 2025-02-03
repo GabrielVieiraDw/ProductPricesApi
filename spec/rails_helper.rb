@@ -76,4 +76,9 @@ RSpec.configure do |config|
       with.library :rails
     end
   end
+
+  # Clean up after each test
+  config.after(:each) do
+    # Add any cleanup needed
+  end
 end
