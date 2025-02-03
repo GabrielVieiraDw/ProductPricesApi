@@ -7,6 +7,7 @@
 </h3>
 
 <p align="center">This project is a monolith with a Ruby on Rails API in the backend and React in the frontend.</p>
+<p align="center">Front repository: https://github.com/GabrielVieiraDw/ProductPrices</p>
 
 ---
 
