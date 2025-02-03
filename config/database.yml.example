@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 80
+  host: localhost
+  user: <YouUser>
+  password: '<YourPassword>'
+
+development:
+  <<: *default
+  database: product_price_development
+
+production:
+  <<: *default
+  database: product_price_production
+
+test:
+  <<: *default
+  host: localhost
+  database: product_price_test

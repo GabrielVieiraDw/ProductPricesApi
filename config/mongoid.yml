@@ -1,0 +1,26 @@
+development:
+  clients:
+    default:
+      database: product_prices_development
+      hosts:
+        - localhost:27017
+      options:
+        retry_writes: false
+
+test:
+  clients:
+    default:
+      database: product_prices_test
+      hosts:
+        - localhost:27017
+      options:
+        retry_writes: false
+
+production:
+  clients:
+    default:
+      database: product_prices_production
+      hosts:
+        - localhost:27017
+      options:
+        retry_writes: false
