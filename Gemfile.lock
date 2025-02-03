@@ -136,11 +136,10 @@ GEM
     minitest (5.25.4)
     mongo (2.21.0)
       bson (>= 4.14.1, < 6.0.0)
-    mongoid (8.1.9)
+    mongoid (9.0.5)
       activemodel (>= 5.1, < 8.1, != 7.0.0)
       concurrent-ruby (>= 1.0.5, < 2.0)
       mongo (>= 2.18.0, < 3.0.0)
-      ruby2_keywords (~> 0.0.5)
     msgpack (1.7.5)
     net-imap (0.5.5)
       date
@@ -265,7 +264,6 @@ GEM
       rubocop-performance
       rubocop-rails
     ruby-progressbar (1.13.0)
-    ruby2_keywords (0.0.5)
     securerandom (0.4.1)
     shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
@@ -299,7 +297,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   kaminari
-  mongoid (~> 8.0)
+  mongoid (~> 9.0)
   pg (~> 1.1)
   pry
   puma (>= 5.0)
