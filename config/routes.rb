@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :prices, only: [:index, :show, :create]
+  resources :prices, param: :country, only: [:index, :show, :create]
 end

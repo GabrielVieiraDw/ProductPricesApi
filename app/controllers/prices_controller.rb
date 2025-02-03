@@ -7,7 +7,10 @@ class PricesController < ApplicationController
   end
 
   def show
-    render json: price
+    @price = PriceSql.find_by!(country: params[:country])
+    render json: @price
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: "Price not found" }, status: :not_found
   end
 
   def create
@@ -34,12 +37,6 @@ class PricesController < ApplicationController
   end
 
   private
-
-  def price
-    @price ||= PriceSql.find_by!(country: params[:country])
-  rescue ActiveRecord::RecordNotFound
-    render json: { error: "Price not found" }, status: :not_found
-  end
 
   def set_prices
     @prices = params[:country].present? ? PriceSql.where(country: params[:country]) : PriceSql.all

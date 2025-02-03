@@ -1,12 +1,12 @@
 FactoryBot.define do
   factory :price_sql do
-    country { 'US' }
-    brand { 'Apple' }
-    product_id { '12345' }
-    product_name { 'iPhone' }
-    shop_name { 'Amazon' }
-    product_category_id { '1' }
-    price { 999.99 }
-    url { 'https://example.com' }
+    sequence(:country) { |n| "Country#{n}" }
+    sequence(:product_id) { |n| "PROD-#{n}" }
+    sequence(:product_name) { |n| "Product #{n}" }
+    sequence(:shop_name) { |n| "Shop #{n}" }
+    price { rand(1..1000) }
+    brand { "Test Brand" }
+    product_category_id { "1" }
+    url { "https://example.com" }
   end
 end
