@@ -1,97 +1,50 @@
-## Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country. This project is a monolith with a Ruby on Rails API in the backend and React in the frontend.
+<h1 align="center">
+    <p><span style="color:#00f0a2">Product Prices</span></p>
+</h1>
 
-### Front Repository
-* https://github.com/GabrielVieiraDw/ProductPrices
+<h3 align="center">
+  Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country.
+</h3>
 
-## Technologies/prerequisites
+<p align="center">This project is a monolith with a Ruby on Rails API in the backend and React in the frontend.</p>
 
-This project was developed with the following technologies:
+---
 
-* Ruby '3.2.4'
-* Rails '7.2.2'
-* PostgreSQL '16'
-* MongoDB '7.0.16'
-* Sidekiq '7.3.8'
-* Redis  '7.0.15'
-* Bundler '2.4.19'
+## Prerequisites
 
-## Setup
+Have the following features with their respective versions installed on the machine:
+
+- Ruby `3.2.4` - You can use [RVM](http://rvm.io)
+- PostgreSQL 16
+  - OSX - `$ brew install postgresql` or install [Postgress.app](http://postgresapp.com/)
+  - Linux - `$ sudo apt-get install postgresql`
+  - Windows - [PostgreSQL for Windows](http://www.postgresql.org/download/windows/)
+- MongoDB `7.0.16`
+- Bundler `2.4.19`
+
+## Setup the project
 
 After you get all the [prerequisites](#prerequisites), simply execute the following commands in sequence:
 
-### Clone the repository:
+```bash
+1. Install the dependencies above
+2. $ git clone  # Clone the project
+3. $ cd ProductPricesApi # Go into the project folder
+4. $ gem install bundler # Bundler install
+5. $ bundle install # Install ruby dependencies
+6. $ check database.yml.example # Config database
+7. $ rake db:create # Creates db
+8. $ rake db:migrate # Migrates db
+9. $ rspec spec # Run the specs to see if everything is working fine
+```
 
-* git clone https://github.com/GabrielVieiraDw/ProductPricesApi.git
-
-* cd ProductPricesApi
-
-### Install dependencies:
-
-* bundle install
-
-### Configure the database:
-
-* Check datababe.yml.example
-
-* rails db:create db:migrate
-
-Start the application:
-
-* rails s
-
-Start Sidekiq for background jobs:
-
-* bundle exec sidekiq
-
-### INFO
-
-Endpoints da API
-
-GET /prices "List prices"
-
-GET /prices/:id "Get price
-
-POST /prices JSON uplaod
-
-### Expected JSON format
-
-[ {
-  "title" : "BIKE CARRIERS",
-  "universeTitle" : "BIKE CARRIERS",
-  "title2" : "BOSAL COMFORT PRO II GREY",
-  "brand" : "BOSAL",
-  "sku" : 110816,
-  "model" : "COMFORT PRO II",
-  "categoryId" : 572,
-  "site" : "BE NL AMAZON.COM BE",
-  "title3" : "BOSAL Trekhaak fietsendrager 500-002 trekhaak 1480 mm 600 mm 675 mm - B09QRB86JN",
-  "site_id" : 997117,
-  "country" : "belgium nl",
-  "price" : 513.29,
-  "variation" : 0.0,
-  "availability" : true,
-  "delivery" : 0,
-  "url" : "https://www.amazon.com.be/BOSAL-Trekhaak-fietsendrager-500-002-trekhaak/dp/B09QRB86JN?language=fr_BE&tag=testachats22-21",
-  "image" : "https://m.media-amazon.com/images/I/51kdVu38gXL._AC_SY300_SX300_.jpg",
-  "modified" : "2024-09-17 01:46:29.0",
-  "deliveryprice" : 0.0,
-  "isbundle" : false,
-  "ismarketplace" : true,
-  "marketplaceseller" : "QUALITY-SHOPS BE NL AMAZON.COM BE",
-  "wasPrice" : null,
-  "referenceId" : 184885
-} ]
-
-### To run the tests:
-
-- `bundle exec rspec`
-
-## TODO
+## Feature improvements for next releases
 
 - Write documentation with Swagger
 - add docker
 - add authentications on API
-- add authentication for users
+- API to pre signed upload;
+- Job download, read and process file
 
 ---
 Thanks for the opportunity, this was made with by Gabriel Vieira :wave:&nbsp; [Get in touch!](https://www.linkedin.com/in/gevvieira/)
