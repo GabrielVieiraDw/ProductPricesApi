@@ -1,7 +1,7 @@
-# Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country
+## Hi, this is the product price app. This app should accept JSON file to upload and record product prices than list the filtering by country
 
-# This project is a monolith with a RoRs API in backend and React in frontend.
-# Frontend: https://github.com/GabrielVieiraDw/ProductPrices
+## This project is a monolith with a RoRs API in backend and React in frontend.
+## Frontend: https://github.com/GabrielVieiraDw/ProductPrices
 
 ## Technologies/prerequisites
 
@@ -19,17 +19,17 @@ This project was developed with the following technologies:
 
 After you get all the [prerequisites](#prerequisites), simply execute the following commands in sequence:
 
-# Clone the repository:
+### Clone the repository:
 
 git clone https://github.com/GabrielVieiraDw/ProductPricesApi.git
 
 cd ProductPricesApi
 
-# Install dependencies:
+### Install dependencies:
 
 bundle install
 
-# Configure the database:
+### Configure the database:
 
 Check datababe.yml.example
 
@@ -43,7 +43,7 @@ Start Sidekiq for background jobs:
 
 bundle exec sidekiq
 
-## INFO
+### INFO
 
 Endpoints da API
 
@@ -53,7 +53,7 @@ GET /prices/:id "Get price
 
 POST /prices JSON uplaod
 
-## Expected JSON format
+### Expected JSON format
 
 [ {
   "title" : "BIKE CARRIERS",
@@ -86,7 +86,7 @@ POST /prices JSON uplaod
 
 - `bundle exec rspec`
 
-# TODO
+## TODO
 
 - Write documentation with Swagger
 - add docker
